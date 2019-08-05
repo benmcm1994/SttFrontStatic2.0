@@ -1,0 +1,1 @@
+# SttFrontStatic2.0
