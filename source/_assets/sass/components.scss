@@ -44,3 +44,94 @@
 @media all and (max-width:480px) {
   .mobile-btn { width: 100%; display:block; }
 }
+
+.rating {
+  width: 100px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+}
+
+.rating > label {
+  float: right;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 1.5em;
+  cursor: pointer;
+  color: #000;
+}
+
+.review-card {
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 20px;
+  height: 100%;
+}
+
+.rating-card .comment {
+  max-height: 90%;
+}
+
+.rating {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.rating label {
+  text-align: left;
+  float: left;
+  color: #ffd700;
+}
+
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+  color: #ffd700;
+}
+
+//review ratings form
+
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+}
+
+.star-rating > label {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 1.5em;
+  cursor: pointer;
+  color: #000;
+}
+
+.star-rating > label:hover,
+.star-rating > label:hover ~ label,
+.star-rating > input.radio-btn:checked ~ label {
+  color: transparent;
+}
+
+.star-rating > label:hover:before,
+.star-rating > label:hover ~ label:before,
+.star-rating > input.radio-btn:checked ~ label:before,
+.star-rating > input.radio-btn:checked ~ label:before {
+  content: "\2605";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  padding: 20px;
+}

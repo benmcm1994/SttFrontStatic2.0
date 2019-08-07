@@ -195,40 +195,47 @@
     </section>
     <section class="testimonials">
         <div class="container">
-            <div class="col-12">
-                <h1>Testimonials</h1>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Testimonials</h1>
+                </div>
             </div>
-            <div class="col-12">
-                <div class="swiper-container" data-slides-per-view="2" data-space-between="1">
-                    <div class="swiper-wrapper">
-                        @foreach($reviews as $review)
-                            @if ($review->status === 'published')
-                                <div class="swiper-slide">
-                                    <div class="card card-shadowed h-full">
-                                        <div class="card-block px-30">
-                                            <div class="rating mb-12">
-                                                @for($i = 0; $i < $review->rating; $i++)
-                                                    <label class="fa fa-star active"></label>
-                                                @endfor
-                                            </div>
-                                            <p class="text-quoted mb-0">
-                                                {{ $review->comment }}
-                                            </p>
-                                            <div class="media align-items-center pb-0">
-                                                <div class="media-body lh-1">
-                                                    <h6 class="mb-0">{{ $review->name }}</h6>
-                                                    <small>{{ $review->company }}</small>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            @foreach($reviews as $review)
+                                @if ($review->status === 'published')
+                                    <div class="swiper-slide">
+                                        <div class="card review-card">
+                                            <div class="card-body">
+                                                <div class="rating">
+                                                    @for($i = 0; $i < $review->rating; $i++)
+                                                        <label class="fa fa-star active"></label>
+                                                    @endfor
                                                 </div>
+                                                <p class="comment"><em>{{ $review->comment }}</em></p>
+                                                <h6>{{ $review->name }}</h6>
+                                                <p><small>{{ $review->company }}</small></p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            @endif
-                        @endforeach
+                                @endif
+                            @endforeach
+                        </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary rounded-pill mobile-btn" data-toggle="modal" data-target="#reviewModal">LEAVE US A REVIEW</button>
                 </div>
             </div>
         </div>
     </section>
+
+    @include('_components.review-modal')
+    
 @endsection

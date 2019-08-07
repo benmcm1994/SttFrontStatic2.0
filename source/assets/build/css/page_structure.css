@@ -7,6 +7,7 @@ body {
   background-attachment: fixed;
   height: 100%;
   font-family: "Open Sans", sans-serif;
+  background: white;
 }
 
 section {
@@ -21,6 +22,10 @@ section {
   padding-bottom: 18%;
   position: relative;
   overflow: hidden;
+}
+
+.home h1, .home p {
+  color: white;
 }
 
 .key-features {
@@ -54,11 +59,16 @@ section {
   color: #37404d;
 }
 
+.testimonials h6 {
+  color: black;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Dosis", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.6;
+  color: #37404d;
 }
 
 h1 {
@@ -113,4 +123,9 @@ h1 {
   right: 0;
   position: absolute;
   z-index: -2;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
 }
