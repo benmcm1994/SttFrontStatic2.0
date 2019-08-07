@@ -1,0 +1,49 @@
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.nav-links {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-account {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-right: 10px;
+  border-color: #0facf3;
+  color: #0facf3;
+}
+
+.btn-signup {
+  color: white;
+  background: #0facf3;
+  border-color: #0facf3;
+  margin-left: 10px;
+}
+
+#typed-text {
+  color: #0facf3;
+}
+
+.body-scrolled {
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+@media all and (max-width: 480px) {
+  .mobile-btn {
+    width: 100%;
+    display: block;
+  }
+}

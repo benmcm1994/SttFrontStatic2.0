@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-attachment: fixed;;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  position: relative;
+  overflow: hidden;
+}
+
+.home {
+  padding-top: 18%;
+  padding-bottom: 18%;
+  position: relative;
+  overflow: hidden;
+}
+
+.key-features {
+  color: #37404d;
+}
+
+.key-features h2 {
+  padding-bottom: 3%;
+}
+
+.key-features img {
+  width: 80%;
+  padding: 2%;
+}
+
+.feature-glance {
+  background: #f8f8f8;
+}
+
+.feature-glance .card {
+  border: none;
+  background: transparent;
+}
+
+.feature-glance i {
+  color: #0facf3;
+  padding: 25px;
+}
+
+.feature-glance h1, h2, p{
+  color: #37404d;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.home-header {
+  background: #191919;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  color: white;
+  padding-top: 0;
+  height: 100vh;
+}
+
+.home-header::before {
+  content: '';
+  background-image: url('../../images/charts.jpg');
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.header{
+  background: #191919;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  color: white;
+  padding-bottom: 6%;
+}
+
+.header h1 {
+  padding-top: 4%;
+}
+
+.header::before {
+  content: '';
+  background-image: url('../../images/charts.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
