@@ -135,3 +135,35 @@
 .swiper-slide {
   padding: 20px;
 }
+
+.social-link:hover {
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.footer-link {
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  color: #37404d;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: #0facf3;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-twitter-square {
+  color: #00aced;
+}
+
+.fa-youtube-square {
+  color: #bb0000;
+}
+
+.fa-linkedin-square {
+  color: #0077B5;
+}
