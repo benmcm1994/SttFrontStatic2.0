@@ -41,9 +41,10 @@
 
         <div class="home-header">
             @include('_partials.navbar')
-            @yield('body')
-            @include('_partials.footer')
+            @include('_partials.home-header')
         </div>
+        @yield('body')
+        @include('_partials.footer')
 
     @else
         <div class="header">
@@ -74,10 +75,24 @@
 
     <script>
 
-        $(function(){
+        $(function () {
+            'use strict'
 
+            function toggleOffcanvas(){
+                $('.offcanvas-collapse').toggleClass('open')
+            }
 
+            $('.closebtn').on('click', function(){
+                toggleOffcanvas();
+            })
 
+            $('[data-toggle="offcanvas"]').on('click', function () {
+                toggleOffcanvas();
+            })
+
+            $('.nav-link').on('click', function(){
+                toggleOffcanvas();
+            })
         });
 
 

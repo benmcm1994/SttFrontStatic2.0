@@ -17,23 +17,34 @@ section {
   overflow: hidden;
 }
 
-.home {
-  padding-top: 18%;
-  padding-bottom: 18%;
-  position: relative;
-  overflow: hidden;
+.section-header {
+  padding-bottom: 5%;
 }
 
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+@media only screen and (max-width: 700px) {
+  .feature-heading {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
 .home h1, .home p {
   color: white;
 }
 
 .key-features {
   color: #37404d;
-}
-
-.key-features h2 {
-  padding-bottom: 3%;
 }
 
 .key-features img {
@@ -82,7 +93,7 @@ h1 {
   z-index: 5;
   color: white;
   padding-top: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .home-header::before {
@@ -105,6 +116,28 @@ h1 {
   z-index: 5;
   color: white;
   padding-bottom: 6%;
+}
+
+.subscription-bar::before {
+  content: "";
+  background-image: url("../../images/parallax.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.subscription-bar {
+  background: #191919;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  color: white;
 }
 
 .header h1 {

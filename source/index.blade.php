@@ -1,24 +1,11 @@
 @extends('_layouts.master')
 
 @section('body')
-    <section class="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8 offset-md-2 text-center">
-                    <h1>A platform for <span id="typed-text">Traders</span></h1>
-                    <p>Social Trader Tools is a web based platform for anyone that uses MT4. Hosted in the cloud 24/7
-                        without the hassle of a VPS, allowing you to copy trades to any amount of trading accounts and much more. </p>
-                    <hr>
-                    <a href="https://my.socialtradertools.com/register" class="btn btn-primary btn-lg rounded-pill">GET STARTED</a>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="key-features">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center order-first">
-                    <h2>Key Features</h2>
+                    <h2 class="section-header">Key Features</h2>
                 </div>
             </div>
             <div class="row">
@@ -26,7 +13,7 @@
                     <img src="/assets/images/responsive.png" alt="">
                 </div>
                 <div class="col-12 col-md-6 order-last text-center text-md-left">
-                    <h4>Account Manager</h4>
+                    <h4 class="feature-heading">Account Manager</h4>
                     <p><strong>Social Trader Tools</strong> allows you to manage an unlimited amount of MT4 accounts from <strong>any MT4 broker</strong>,
                         all from one platform. There is <strong>no special software</strong>, <strong>no complex configurations</strong> and <strong>no VPS servers required.</strong>
                     </p>
@@ -39,7 +26,7 @@
             <hr>
             <div class="row">
                 <div class="col-12 col-md-6 order-last order-md-first text-center text-md-left">
-                    <h4>Trade Copier</h4>
+                    <h4 class="feature-heading">Trade Copier</h4>
                     <p>The core feature of <strong>Social Trader Tools</strong> is trade copying. Our trade copier is
                         the <strong>fastest copier in the market with an average replication speed of 50ms.</strong>
                     </p>
@@ -58,7 +45,7 @@
                     <img src="/assets/images/signal.png" alt="">
                 </div>
                 <div class="col-12 col-md-6 order-last order-md-last text-center text-md-left">
-                    <h4>Signal Provider</h4>
+                    <h4 class="feature-heading">Signal Provider</h4>
                     <p>With <strong>Social Trader Tools</strong> you can offer your own trading account out to other
                         users as a signal via a <strong>signal page</strong>.
                     </p>
@@ -72,7 +59,7 @@
             <hr>
             <div class="row">
                 <div class="col-12 col-md-6 order-last order-md-first  text-center text-md-left">
-                    <h4>Whitelabel</h4>
+                    <h4 class="feature-heading">Whitelabel</h4>
                     <p>If you are looking to <strong>start a trading business</strong> or have an existing brand, you can whitelabel our
                         platform and offer out signals to your own audience. Whitelabels can be setup with a <strong>signal leader board</strong>,
                         creating your own mini signal site.
@@ -94,7 +81,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Features at a glance</h2>
+                    <h2 class="section-header">Features at a glance</h2>
                 </div>
             </div>
             <div class="row">
@@ -106,20 +93,6 @@
                             <p>Manage an as many MT4 accounts as needed.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
-                            <p><strong>Web based interface</strong></p>
-                            <p>Manage accounts from the desk or on the go.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-                            <p><strong>Email alerts</strong></p>
-                            <p>Real time email alerts for any trading activity.</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
@@ -129,20 +102,6 @@
                             <p>Turn losing strategies into profitable ones.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-money fa-3x" aria-hidden="true"></i>
-                            <p><strong>Signal selling</strong></p>
-                            <p>Sell your trade signals to clients.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
-                            <p><strong>Push events</strong></p>
-                            <p>Real time trading events for websites or apps.</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
@@ -150,20 +109,6 @@
                             <i class="fa fa-money fa-3x" aria-hidden="true"></i>
                             <p><strong>Signal selling</strong></p>
                             <p>Sell your trade signals to clients.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-tag fa-3x" aria-hidden="true"></i>
-                            <p><strong>Whitelabel</strong></p>
-                            <p>Rebrand our platform for your clients.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-shield fa-3x" aria-hidden="true"></i>
-                            <p><strong>Peace of mind</strong></p>
-                            <p>Automated equity protection options.</p>
                         </div>
                     </div>
                 </div>
@@ -175,6 +120,37 @@
                             <p>Manage your profile as a team.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
+                            <p><strong>Web based interface</strong></p>
+                            <p>Manage accounts from the desk or on the go.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-money fa-3x" aria-hidden="true"></i>
+                            <p><strong>Signal selling</strong></p>
+                            <p>Sell your trade signals to clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-tag fa-3x" aria-hidden="true"></i>
+                            <p><strong>Whitelabel</strong></p>
+                            <p>Rebrand our platform for your clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
                     <div class="card">
                         <div class="card-body text-center">
                             <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
@@ -182,6 +158,37 @@
                             <p>Accounts hosted securely in the cloud 24/7.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                            <p><strong>Email alerts</strong></p>
+                            <p>Real time email alerts for any trading activity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
+                            <p><strong>Push events</strong></p>
+                            <p>Real time trading events for websites or apps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-shield fa-3x" aria-hidden="true"></i>
+                            <p><strong>Peace of mind</strong></p>
+                            <p>Automated equity protection options.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
                     <div class="card">
                         <div class="card-body text-center">
                             <i class="fa fa-share-alt fa-3x" aria-hidden="true"></i>
@@ -197,7 +204,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1>Testimonials</h1>
+                    <h2 class="section-header">Testimonials</h2>
                 </div>
             </div>
             <div class="row">
@@ -230,7 +237,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <button class="btn btn-primary rounded-pill mobile-btn" data-toggle="modal" data-target="#reviewModal">LEAVE US A REVIEW</button>
+                    <button class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#reviewModal">LEAVE US A REVIEW</button>
                 </div>
             </div>
         </div>

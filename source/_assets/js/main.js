@@ -44,3 +44,4 @@ $(function(){
     $('.modal ').insertAfter($('body'));
 
 });
+

@@ -1,9 +1,9 @@
-<section class="subscription-bar bg-dark">
+<section class="subscription-bar">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <h6>Subscribe to our newsletter for the latest news and updates!</h6>
-                <button class="btn btn-primary rounded-pill mobile-btn" data-toggle="modal" data-target="#subscriptionModal">SUBSCRIBE NOW</button>
+                <button class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#subscriptionModal">SUBSCRIBE NOW</button>
             </div>
         </div>
     </div>
@@ -11,15 +11,15 @@
 
 <section class="footer">
     <div class="container">
-        <div class="row">
+        <div class="row footer-top">
             <div class="col-12 col-md-6 text-center text-md-left">
                 <h2>Signup to <strong>Social Trader Tools</strong> today!</h2>
             </div>
             <div class="col-12 col-md-6 text-center text-md-right">
-                <a class="btn btn-success rounded-pill mobile-btn" href="https://my.socialtradertools.com/register">GET STARTED</a>
+                <a class="btn btn-success rounded-pill" href="https://my.socialtradertools.com/register">GET STARTED</a>
             </div>
         </div>
-        <div class="row">
+        <div class="row footer-bottom">
             <div class="col-12 col-md-4 text-center text-md-left">
                 <p><small>Copyright © 2019. All rights reserved.</small></p>
             </div>
