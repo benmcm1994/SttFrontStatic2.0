@@ -136,21 +136,10 @@ $(function () {
 
 /***/ }),
 
-/***/ "./source/_assets/sass/components.scss":
-/*!*********************************************!*\
-  !*** ./source/_assets/sass/components.scss ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./source/_assets/sass/page_structure.scss":
-/*!*************************************************!*\
-  !*** ./source/_assets/sass/page_structure.scss ***!
-  \*************************************************/
+/***/ "./source/_assets/sass/main.scss":
+/*!***************************************!*\
+  !*** ./source/_assets/sass/main.scss ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -159,15 +148,14 @@ $(function () {
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************************************************************************!*\
-  !*** multi ./source/_assets/js/main.js ./source/_assets/sass/page_structure.scss ./source/_assets/sass/components.scss ***!
-  \*************************************************************************************************************************/
+/*!*************************************************************************!*\
+  !*** multi ./source/_assets/js/main.js ./source/_assets/sass/main.scss ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\ben_m\Documents\Development\Projects\SttFrontStatic2.0\source\_assets\js\main.js */"./source/_assets/js/main.js");
-__webpack_require__(/*! C:\Users\ben_m\Documents\Development\Projects\SttFrontStatic2.0\source\_assets\sass\page_structure.scss */"./source/_assets/sass/page_structure.scss");
-module.exports = __webpack_require__(/*! C:\Users\ben_m\Documents\Development\Projects\SttFrontStatic2.0\source\_assets\sass\components.scss */"./source/_assets/sass/components.scss");
+module.exports = __webpack_require__(/*! C:\Users\ben_m\Documents\Development\Projects\SttFrontStatic2.0\source\_assets\sass\main.scss */"./source/_assets/sass/main.scss");
 
 
 /***/ })

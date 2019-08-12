@@ -27,9 +27,7 @@
         <!-- Icons CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ mix('css/page_structure.css', 'assets/build') }}">
-        <link rel="stylesheet" href="{{ mix('css/components.css', 'assets/build') }}">
+        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
@@ -64,12 +62,16 @@
 
 
     <!-- Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Swiper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- Jquery Validation JS -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <!-- Serialize JSON -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/2.9.0/jquery.serializejson.min.js"></script>
     <!-- Custom JS -->
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
@@ -94,6 +96,110 @@
                 toggleOffcanvas();
             })
         });
+
+        $( document ).ready(function() {
+            $('.disable_submit').addClass('button_disabled').attr('disabled', false);
+        });
+
+        $("#reviewForm").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 4,
+                    maxlength: 45
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                company: {
+                    required: true,
+                    minlength: 4
+                },
+                comment: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 200
+                },
+                rating: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your name",
+                    minlength: "Please enter at least 4 characters",
+                    maxlength: "Maximum character length is 45"
+                },
+                email: {
+                    required: "Please enter your email address",
+                    email: "Please enter a valid email"
+                },
+                company: {
+                    required: "Please enter a company, service or trader name",
+                    minlength: "Please enter at least 4 characters",
+                    maxlength: "Maximum character length is 45"
+                },
+                comment: {
+                    required: "Please enter your review",
+                    minlength: "Please enter at least 10 characters",
+                    maxlength: "Maximum character length is 200"
+                },
+                rating: {
+                    required: "Please leave a rating out of 5"
+                }
+            },
+            ignore:'',
+            errorPlacement: function(error, element) {
+                if (element.attr("type") == "radio") {
+                    error.insertAfter('#star-ratingLabel');
+                } else {
+                    element.after(error);
+                }
+            }
+        });
+
+        $('#reviewForm').submit(function(event) {
+            event.preventDefault();
+
+            if(!$('#reviewForm').valid()){
+                return false;
+            }
+
+            var data = $("#reviewForm").serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: "{!! $page->apiUrl !!}/stt/review",
+                dataType: "json",
+                contentType: 'application/json',
+                data: JSON.stringify($(this).serializeJSON()),
+            }).done(function(response){
+                $('#reviewModal').modal('hide');
+                $('#submissionModalContent').removeClass('alertError');
+                $('#submissionModalContent').addClass('alertSuccess');
+                //calls custom clear function
+                clearAllInputs('#reviewModal');
+                $('#alertText').text('Review Successfully Submitted.');
+                console.log(response);
+                $('#submissionModal').modal('show');
+                $('.disable_submit').addClass('button_disabled').attr('disabled', false);
+                setTimeout(function(){
+                    $('#submissionModal').modal('hide');
+                },2000);
+            }).fail( function(xhr, textStatus, errorThrown) {
+                $('#reviewModal').modal('hide');
+                $('#submissionModalContent').removeClass('alertSuccess');
+
+                $('.disable_submit').addClass('button_disabled').attr('disabled', false);
+
+                console.log(xhr.responseText);
+
+                $('#alertText').text('Error submitting form ' + xhr.responseText);
+                $('#submissionModal').modal('show');
+            });
+        });
+
 
 
     </script>

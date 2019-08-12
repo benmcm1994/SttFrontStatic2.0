@@ -282,3 +282,28 @@ i:hover {
 .navbar .navbar-toggler {
   border: none !important;
 }
+
+.dropdown > .dropdown-menu {
+  text-transform: none;
+}
+
+.dropdown-item:hover {
+  color: #14aef3;
+  background: #ffffff;
+}
+
+@media (min-width: 979px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+.item {
+  background: red;
+}
+
+.containerx {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 1rem;
+}
