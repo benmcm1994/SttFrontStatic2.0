@@ -244,5 +244,6 @@
     </section>
 
     @include('_components.review-modal')
+    @include('_components.subscription-modal')
     
 @endsection
