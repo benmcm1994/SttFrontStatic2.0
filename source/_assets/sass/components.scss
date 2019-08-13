@@ -12,19 +12,19 @@
 }
 
 .btn-outline-primary{
-  border-color: #14aef3;
+  border-color: $primary;
 }
 
 .btn-outline-primary:hover {
-  background: #14aef3;
-  border-color: #14aef3;
+  background: $primary;
+  border-color: $primary;
   -webkit-box-shadow: 0px 0px 43px -14px $primary;
   -moz-box-shadow: 0px 0px 43px -14px $primary;
   box-shadow: 0px 0px 43px -14px $primary;
 }
 
 i:hover {
-  text-shadow: 0px 0px 6px rgba(15,172,243,0.5);
+  text-shadow: 0px 0px 6px $primary;
 }
 
 .btn {
@@ -322,4 +322,9 @@ i:hover {
   grid-template-columns: 150px 150px 150px;
   grid-template-rows: 150px 150px;
   grid-gap: 1rem;
+}
+
+.error {
+  color: red;
+  padding-top: 5px;
 }
