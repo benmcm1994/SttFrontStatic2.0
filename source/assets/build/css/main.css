@@ -9739,10 +9739,6 @@ h3 {
   box-shadow: 0px 0px 43px -14px #0facf3;
 }
 
-i:hover {
-  text-shadow: 0px 0px 6px #0facf3;
-}
-
 .btn {
   font-size: 11px;
   font-weight: bold;
@@ -10016,17 +10012,6 @@ i:hover {
     display: block;
   }
 }
-.item {
-  background: red;
-}
-
-.containerx {
-  display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 150px 150px;
-  grid-gap: 1rem;
-}
-
 .error {
   color: red;
   padding-top: 5px;
@@ -10086,7 +10071,7 @@ hr {
   padding: 2%;
 }
 
-.feature-glance {
+.feature-glance, .account-features {
   background: #f8f8f8;
 }
 
@@ -10095,7 +10080,7 @@ hr {
   background: transparent;
 }
 
-.feature-glance i {
+.feature-glance i, .account-features i {
   color: #0facf3;
   padding: 25px;
 }
@@ -10113,7 +10098,6 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.6;
-  color: #37404d;
 }
 
 h1 {
@@ -10149,9 +10133,19 @@ h1 {
   position: relative;
   z-index: 5;
   color: white;
+  padding-top: 6%;
   padding-bottom: 6%;
 }
 
+@media all and (max-width: 480px) {
+  .header {
+    padding-top: 20%;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+}
 .subscription-bar::before {
   content: "";
   background-image: url("../../images/parallax.jpg");

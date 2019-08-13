@@ -23,10 +23,6 @@
   box-shadow: 0px 0px 43px -14px $primary;
 }
 
-i:hover {
-  text-shadow: 0px 0px 6px $primary;
-}
-
 .btn {
   font-size: 11px;
   font-weight: bold;
@@ -311,17 +307,6 @@ i:hover {
   .dropdown:hover>.dropdown-menu {
     display: block;
   }
-}
-
-.item {
-  background: red;
-}
-
-.containerx {
-  display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 150px 150px;
-  grid-gap: 1rem;
 }
 
 .error {
