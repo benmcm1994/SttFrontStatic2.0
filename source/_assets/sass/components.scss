@@ -1,14 +1,14 @@
 .btn-primary {
-  border-color: #0facf3;
-  background: #0facf3;
+  border-color: $primary;
+  background: $primary;
 }
 
 .btn-primary:hover {
-  border-color: #0facf3;
-  background: #0facf3;
-  -webkit-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  -moz-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
+  border-color: $primary;
+  background: $primary;
+  -webkit-box-shadow: 0px 0px 43px -14px $primary;
+  -moz-box-shadow: 0px 0px 43px -14px $primary;
+  box-shadow: 0px 0px 43px -14px $primary;
 }
 
 .btn-outline-primary{
@@ -18,9 +18,9 @@
 .btn-outline-primary:hover {
   background: #14aef3;
   border-color: #14aef3;
-  -webkit-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  -moz-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
+  -webkit-box-shadow: 0px 0px 43px -14px $primary;
+  -moz-box-shadow: 0px 0px 43px -14px $primary;
+  box-shadow: 0px 0px 43px -14px $primary;
 }
 
 i:hover {
@@ -62,21 +62,21 @@ i:hover {
   display: block;
   padding: .5rem 1rem;
   margin-right: 5px;
-  border-color: #0facf3;
-  color: #0facf3;
+  border-color: $primary;
+  color: $primary;
   margin-left: 5px;
 }
 
 .btn-signup {
   color: white;
-  background: #0facf3;
-  border-color: #0facf3;
+  background: $primary;
+  border-color: $primary;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 #typed-text {
-  color: #0facf3;
+  color: $primary;
 }
 
 .body-scrolled{
@@ -208,7 +208,7 @@ i:hover {
 
 .footer-link:hover {
   text-decoration: none;
-  color: #0facf3;
+  color: $primary;
 }
 
 .fa-facebook-square {
@@ -296,4 +296,30 @@ i:hover {
 
 .navbar .navbar-toggler {
   border: none !important;
+}
+
+.dropdown > .dropdown-menu {
+  text-transform: none;
+}
+
+.dropdown-item:hover {
+  color: #14aef3;
+  background: #ffffff;
+}
+
+@media (min-width: 979px) {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+}
+
+.item {
+  background: red;
+}
+
+.containerx {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 1rem;
 }

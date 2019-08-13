@@ -4,9 +4,9 @@ html {
 
 body {
   margin: 0;
-  background-attachment: fixed;;
+  background-attachment: fixed;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: white;
 }
 
@@ -33,13 +33,12 @@ hr {
   margin-bottom: 8%;
 }
 
-@media only screen and (max-width: 700px){
-  .feature-heading{
+@media only screen and (max-width: 700px) {
+  .feature-heading {
     padding-top: 5%;
     padding-bottom: 5%;
   }
 }
-
 .home h1, .home p {
   color: white;
 }
@@ -63,11 +62,11 @@ hr {
 }
 
 .feature-glance i {
-  color: $primary;
+  color: #0facf3;
   padding: 25px;
 }
 
-.feature-glance h1, h2, p{
+.feature-glance h1, h2, p {
   color: #37404d;
 }
 
@@ -76,7 +75,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.6;
@@ -98,8 +97,8 @@ h1 {
 }
 
 .home-header::before {
-  content: '';
-  background-image: url('../../images/charts.jpg');
+  content: "";
+  background-image: url("../../images/charts.jpg");
   background-size: cover;
   opacity: 0.1;
   top: 0;
@@ -110,7 +109,7 @@ h1 {
   z-index: -2;
 }
 
-.header{
+.header {
   background: #191919;
   background-size: cover;
   position: relative;
@@ -119,9 +118,9 @@ h1 {
   padding-bottom: 6%;
 }
 
-.subscription-bar::before{
-  content: '';
-  background-image: url('../../images/parallax.jpg');
+.subscription-bar::before {
+  content: "";
+  background-image: url("../../images/parallax.jpg");
   background-size: cover;
   background-position: center;
   opacity: 1;
@@ -146,8 +145,8 @@ h1 {
 }
 
 .header::before {
-  content: '';
-  background-image: url('../../images/charts.jpg');
+  content: "";
+  background-image: url("../../images/charts.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.1;
