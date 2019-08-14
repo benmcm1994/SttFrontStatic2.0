@@ -3,6 +3,10 @@
   background: $primary;
 }
 
+.btn-success {
+  color: white;
+}
+
 .btn-primary:hover {
   border-color: $primary;
   background: $primary;
@@ -21,10 +25,6 @@
   -webkit-box-shadow: 0px 0px 43px -14px $primary;
   -moz-box-shadow: 0px 0px 43px -14px $primary;
   box-shadow: 0px 0px 43px -14px $primary;
-}
-
-i:hover {
-  text-shadow: 0px 0px 6px $primary;
 }
 
 .btn {
@@ -56,6 +56,16 @@ i:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-item .nav-bottom {
+  padding-left: 0;
+}
+
+.nav-item  .nav-bottom {
+  padding-right: 0;
 }
 
 .btn-account {
@@ -273,12 +283,6 @@ i:hover {
     transform: translateX(100%);
   }
 
-
-  .nav-bottom {
-    padding-top: 60%;
-  }
-
-
 }
 
 .offcanvas-collapse .closebtn {
@@ -313,18 +317,21 @@ i:hover {
   }
 }
 
-.item {
-  background: red;
-}
-
-.containerx {
-  display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 150px 150px;
-  grid-gap: 1rem;
-}
-
 .error {
   color: red;
   padding-top: 5px;
+}
+
+.checklist p {
+  margin: 0;
+}
+
+.checklist p i {
+  padding: 5px;
+  color: $success;
+}
+
+.pricing-card {
+  padding: 30px;
+  border: none;
 }
