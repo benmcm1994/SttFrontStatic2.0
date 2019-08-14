@@ -334,4 +334,19 @@
 .pricing-card {
   padding: 30px;
   border: none;
+
+  &_popular {
+    background: #f8f8f8;
+  }
+
+  &__tag {
+    position: absolute;
+    background: $success;
+    top: 0;
+    left: 50px;
+    transform-origin: top left;
+    tranform: rotate(190deg);
+  }
 }
+
+

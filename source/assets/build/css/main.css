@@ -10040,6 +10040,17 @@ h3 {
   padding: 30px;
   border: none;
 }
+.pricing-card_popular {
+  background: #f8f8f8;
+}
+.pricing-card__tag {
+  position: absolute;
+  background: #46da60;
+  top: 0;
+  left: 50px;
+  transform-origin: top left;
+  tranform: rotate(190deg);
+}
 
 html {
   height: 100%;

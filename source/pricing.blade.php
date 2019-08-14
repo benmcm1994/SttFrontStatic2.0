@@ -32,8 +32,9 @@ crawl: true
                     </div>
                 </div>
                 <div class="col-12 col-md-3 text-center">
-                    <div class="card pricing-card">
+                    <div class="card pricing-card pricing-card_popular">
                         <div class="card-body">
+                            <span class="pricing-card__tag">Popular</span>
                             <h6><strong>PLUS</strong></h6>
                             <h1>$60</h1>
                             <p>Up to 5 accounts</p>
