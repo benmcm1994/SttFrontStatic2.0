@@ -7138,7 +7138,7 @@ button.bg-dark:focus {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1) !important;
 }
 
 .shadow-lg {
@@ -10037,8 +10037,10 @@ h3 {
 }
 
 .pricing-card {
-  padding: 30px;
+  padding: 30px 10px 30px 10px;
   border: none;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
 }
 .pricing-card_popular {
   background: #f8f8f8;
@@ -10049,7 +10051,25 @@ h3 {
   top: 0;
   left: 50px;
   transform-origin: top left;
-  tranform: rotate(190deg);
+  transform: rotate(90deg);
+  font-size: 13px;
+  padding: 0px 5px 0px 5px;
+  color: white;
+  text-transform: uppercase;
+  border-right: 5px solid #46da60;
+  border-radius: 0px 10px 10px 0px;
+}
+.pricing-card__price {
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin: 10px;
+  font-size: 3.3rem;
+}
+.pricing-card__accounts {
+  margin-bottom: 40px;
+}
+.pricing-card:hover {
+  transform: scale(1.1);
 }
 
 html {

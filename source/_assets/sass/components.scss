@@ -332,8 +332,10 @@
 }
 
 .pricing-card {
-  padding: 30px;
+  padding: 30px 10px 30px 10px;
   border: none;
+  transition: transform .2s;
+  box-shadow: $box-shadow;
 
   &_popular {
     background: #f8f8f8;
@@ -346,7 +348,28 @@
     top: 0;
     left: 50px;
     transform-origin: top left;
-    tranform: rotate(190deg);
+    transform: rotate(90deg);
+    font-size: 13px;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    text-transform: uppercase;
+    border-right: 5px solid $success;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  &__price {
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin: 10px;
+    font-size: 3.3rem;
+  }
+
+  &__accounts {
+    margin-bottom: 40px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
