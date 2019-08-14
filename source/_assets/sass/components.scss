@@ -3,6 +3,10 @@
   background: $primary;
 }
 
+.btn-success {
+  color: white;
+}
+
 .btn-primary:hover {
   border-color: $primary;
   background: $primary;
@@ -271,7 +275,7 @@
 
 
   .nav-bottom {
-    padding-top: 60%;
+
   }
 
 
@@ -312,4 +316,18 @@
 .error {
   color: red;
   padding-top: 5px;
+}
+
+.checklist p {
+  margin: 0;
+}
+
+.checklist p i {
+  padding: 5px;
+  color: $success;
+}
+
+.pricing-card {
+  padding: 30px;
+  border: none;
 }

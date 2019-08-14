@@ -6,7 +6,7 @@ crawl: true
 @extends('_layouts.master')
 
 @section('body')
-    <section class="account-intro">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-9 text-center text-md-left text-justify align-self-center">
@@ -23,7 +23,7 @@ crawl: true
             </div>
         </div>
     </section>
-    <section class="account-features">
+    <section class="section-two">
         <div class="container">
             <div class="row">
                 <div class="col-12"><h2 class="section-header text-center">Key Features</h2></div>
