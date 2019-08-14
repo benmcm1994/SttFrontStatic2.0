@@ -1,30 +1,30 @@
 .btn-primary {
-  border-color: #0facf3;
-  background: #0facf3;
+  border-color: $primary;
+  background: $primary;
+}
+
+.btn-success {
+  color: white;
 }
 
 .btn-primary:hover {
-  border-color: #0facf3;
-  background: #0facf3;
-  -webkit-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  -moz-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
+  border-color: $primary;
+  background: $primary;
+  -webkit-box-shadow: 0px 0px 43px -14px $primary;
+  -moz-box-shadow: 0px 0px 43px -14px $primary;
+  box-shadow: 0px 0px 43px -14px $primary;
 }
 
 .btn-outline-primary{
-  border-color: #14aef3;
+  border-color: $primary;
 }
 
 .btn-outline-primary:hover {
-  background: #14aef3;
-  border-color: #14aef3;
-  -webkit-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  -moz-box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-  box-shadow: 0px 0px 43px -14px rgba(15,172,243,1);
-}
-
-i:hover {
-  text-shadow: 0px 0px 6px rgba(15,172,243,0.5);
+  background: $primary;
+  border-color: $primary;
+  -webkit-box-shadow: 0px 0px 43px -14px $primary;
+  -moz-box-shadow: 0px 0px 43px -14px $primary;
+  box-shadow: 0px 0px 43px -14px $primary;
 }
 
 .btn {
@@ -56,27 +56,37 @@ i:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-item .nav-bottom {
+  padding-left: 0;
+}
+
+.nav-item  .nav-bottom {
+  padding-right: 0;
 }
 
 .btn-account {
   display: block;
   padding: .5rem 1rem;
   margin-right: 5px;
-  border-color: #0facf3;
-  color: #0facf3;
+  border-color: $primary;
+  color: $primary;
   margin-left: 5px;
 }
 
 .btn-signup {
   color: white;
-  background: #0facf3;
-  border-color: #0facf3;
+  background: $primary;
+  border-color: $primary;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 #typed-text {
-  color: #0facf3;
+  color: $primary;
 }
 
 .body-scrolled{
@@ -208,7 +218,7 @@ i:hover {
 
 .footer-link:hover {
   text-decoration: none;
-  color: #0facf3;
+  color: $primary;
 }
 
 .fa-facebook-square {
@@ -273,12 +283,6 @@ i:hover {
     transform: translateX(100%);
   }
 
-
-  .nav-bottom {
-    padding-top: 60%;
-  }
-
-
 }
 
 .offcanvas-collapse .closebtn {
@@ -296,4 +300,38 @@ i:hover {
 
 .navbar .navbar-toggler {
   border: none !important;
+}
+
+.dropdown > .dropdown-menu {
+  text-transform: none;
+}
+
+.dropdown-item:hover {
+  color: #14aef3;
+  background: #ffffff;
+}
+
+@media (min-width: 979px) {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+}
+
+.error {
+  color: red;
+  padding-top: 5px;
+}
+
+.checklist p {
+  margin: 0;
+}
+
+.checklist p i {
+  padding: 5px;
+  color: $success;
+}
+
+.pricing-card {
+  padding: 30px;
+  border: none;
 }

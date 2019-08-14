@@ -13,8 +13,28 @@
                     <li class="nav-item active">
                         <a class="nav-link nav-links" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-links" href="/features/">Features</a>
+                    <li class="nav-item dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/account-manager/">Account Manager</a>
+                            <a class="dropdown-item" href="/trade-copier/">Trade Copier</a>
+                            <a class="dropdown-item" href="/signal-provider/">Signal Provider</a>
+                            <a class="dropdown-item" href="/whitelabel/">Whitelabel</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link nav-links" href="/account-manager/">Account Manager</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link nav-links" href="/trade-copier/">Trade Copier</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link nav-links" href="/signal-provider/">Signal Provider</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link nav-links" href="/whitelabel/">Whitelabel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-links" href="/pricing/">Pricing</a>
