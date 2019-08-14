@@ -56,6 +56,16 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-item .nav-bottom {
+  padding-left: 0;
+}
+
+.nav-item  .nav-bottom {
+  padding-right: 0;
 }
 
 .btn-account {
@@ -272,12 +282,6 @@
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
-
-
-  .nav-bottom {
-
-  }
-
 
 }
 
