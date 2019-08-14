@@ -10072,6 +10072,10 @@ h3 {
   transform: scale(1.1);
 }
 
+.blog-card {
+  border: none;
+}
+
 html {
   height: 100%;
 }
