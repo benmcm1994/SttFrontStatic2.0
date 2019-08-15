@@ -8,18 +8,34 @@ crawl: true
 @section('body')
     <section class="section-two">
         <div class="container">
-            <div class="col-12">
-                <div class="card blog-card">
-                    <div class="card-body">
-                        <h5 class="pull-left">New feature: Whitelabel users account limit can be changed</h5>
-                        <p class="pull-right">19.09.1690</p>
-                        <p class="pull-left">When we created the whitelabel option, we presumed, as providers pay for users hosting, limiting users max accounts to one was a logical choice.
-
-                            As the amount of whitelabels grows into the 100s, we have noticed this limit does not work for all providers, so we have now made it configurable!</p>
-                        <a href="/" class="text-primary pull-left">Read More ></a>
-
-                    </div>
+            <div class="row">
+                <div class="col-12">
+                    @if (count($posts) == 0)
+                        <div class="card blog-card">
+                            <div class="card-body">
+                                <h5 class="blog-card__title">Unfortunately.</h5>
+                                <p class="blog-card__body">No blog posts have been written.</p>
+                            </div>
+                        </div>
                 </div>
+                    @else
+                    <div class="row">
+                        @foreach ($posts as $post)
+                                <div class="col-12">
+                                    <div class="card blog-card">
+                                        <div class="card-body">
+                                            <h5 class="blog-card__title">{{ $post->title }}</h5>
+                                            <h5 class="blog-card__date">{{ $post->published_on }}</h5>
+                                            <div class="blog-card__body">
+                                                {!! str_limit($post->getContent(), 300) !!}
+                                            </div>
+                                            <a href="{{ $post->getPath() }}" class="blog-card__link">Read More ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        @endforeach
+                    </div>
+                    @endif
             </div>
         </div>
     </section>

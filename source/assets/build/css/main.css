@@ -9973,7 +9973,7 @@ h3 {
     background: #171b22;
     opacity: 0.98;
     transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    z-index: 2000;
+    z-index: 1;
   }
 
   .offcanvas-collapse .navbar-nav li > a {
@@ -10074,6 +10074,25 @@ h3 {
 
 .blog-card {
   border: none;
+}
+.blog-card__title {
+  float: left;
+  display: inline;
+}
+.blog-card__date {
+  float: right;
+  display: inline;
+}
+@media only screen and (max-width: 900px) {
+  .blog-card__date {
+    display: none;
+  }
+}
+.blog-card__body {
+  float: left;
+}
+.blog-card__link {
+  float: left;
 }
 
 html {
@@ -10223,7 +10242,7 @@ h1 {
   background: #191919;
   background-size: cover;
   position: relative;
-  z-index: 5;
+  z-index: 2;
   color: white;
 }
 

@@ -263,7 +263,7 @@
     transition: visibility .5s ease-in-out, -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out, visibility .5s ease-in-out;
     transition: transform .5s ease-in-out, visibility .5s ease-in-out, -webkit-transform .3s ease-in-out;
-    z-index: 2000;
+    z-index: 1;
   }
 
   .offcanvas-collapse .navbar-nav li > a {
@@ -375,6 +375,29 @@
 
 .blog-card {
   border: none;
+
+  &__title {
+    float: left;
+    display:inline;
+  }
+
+  &__date {
+    float: right;
+    display:inline;
+
+    @media only screen and (max-width: 900px){
+      display: none;
+    }
+
+  }
+
+
+  &__body {
+    float: left;
+  }
+
+  &__link {
+    float: left;
+  }
+
 }
-
-
