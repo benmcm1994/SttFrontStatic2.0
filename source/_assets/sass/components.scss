@@ -421,3 +421,13 @@
   }
 
 }
+
+.contact-card {
+  background: $bg-section-gray;
+  border: none;
+
+  &__social-link {
+    padding: 10px;
+    display: inline-block;
+  }
+}

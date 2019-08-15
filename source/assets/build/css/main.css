@@ -10110,6 +10110,15 @@ h3 {
   }
 }
 
+.contact-card {
+  background: #f8f8f8;
+  border: none;
+}
+.contact-card__social-link {
+  padding: 10px;
+  display: inline-block;
+}
+
 html {
   height: 100%;
 }
