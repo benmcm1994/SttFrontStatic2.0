@@ -10105,6 +10105,9 @@ h3 {
   .post-container img:active {
     transform: scale(1.5);
   }
+  .post-container p {
+    text-align: left;
+  }
 }
 
 html {
