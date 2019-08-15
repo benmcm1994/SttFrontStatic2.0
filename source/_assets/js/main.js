@@ -9,5 +9,7 @@ window.validate = require('jquery-validation');
 //import project js files here
 const swiper = require('./swiper');
 const navbar = require('./navbar');
+const subscribe = require('./subscribe');
+const share = require('./share');
 
 $('.modal ').insertAfter($('body'));

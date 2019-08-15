@@ -24,10 +24,10 @@
                 <p><small>Copyright © 2019. All rights reserved.</small></p>
             </div>
             <div class="col-12 col-md-4 text-center">
-                <a href="https://facebook.com/socialtradertools"><i class="fa fa-facebook-square fa-2x social-link" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/tifintech"><i class="fa fa-twitter-square fa-2x social-link" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/company/14809630/"><i class="fa fa-linkedin-square fa-2x social-link" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UCnWMF0CDmlaPtpjrq4MpGXw"><i class="fa fa-youtube-square fa-2x social-link" aria-hidden="true"></i></a>
+                <a href="{!! $page->facebookUrl !!}"><i class="fa fa-facebook-square fa-2x social-link" aria-hidden="true"></i></a>
+                <a href="{!! $page->twitterUrl !!}"><i class="fa fa-twitter-square fa-2x social-link" aria-hidden="true"></i></a>
+                <a href="{!! $page->linkedInUrl !!}"><i class="fa fa-linkedin-square fa-2x social-link" aria-hidden="true"></i></a>
+                <a href="{!! $page->youtubeUrl !!}"><i class="fa fa-youtube-square fa-2x social-link" aria-hidden="true"></i></a>
             </div>
             <div class="col-12 col-md-4 text-center text-md-right">
                 <a href="/contact/" class="footer-link"><small>Contact us</small></a>

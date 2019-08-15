@@ -53,8 +53,8 @@ hr {
   padding: 2%;
 }
 
-.feature-glance {
-  background: #f8f8f8;
+.feature-glance, .section-two {
+  background: $bg-section-gray;
 }
 
 .feature-glance .card {
@@ -62,7 +62,7 @@ hr {
   background: transparent;
 }
 
-.feature-glance i {
+.feature-glance i, .section-two i {
   color: $primary;
   padding: 25px;
 }
@@ -80,7 +80,6 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.6;
-  color: #37404d;
 }
 
 h1 {
@@ -110,13 +109,24 @@ h1 {
   z-index: -2;
 }
 
-.header{
+.header {
   background: #191919;
   background-size: cover;
   position: relative;
   z-index: 5;
   color: white;
+  padding-top: 6%;
   padding-bottom: 6%;
+}
+
+@media all and (max-width:480px) {
+  .header {
+    padding-top: 20%;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
 }
 
 .subscription-bar::before{
@@ -137,7 +147,7 @@ h1 {
   background: #191919;
   background-size: cover;
   position: relative;
-  z-index: 5;
+  z-index: 2;
   color: white;
 }
 

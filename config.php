@@ -21,9 +21,10 @@ return [
     // Urls
     'urlRegister' => 'https://my.socialtradertools.com/register',
     'urlLogin' => 'https://my.socialtradertools.com/login',
-    'facebookUrl' => 'https://www.facebook.com/socialtradertools',
+    'facebookUrl' => 'https://www.facebook.com/tifintech',
     'twitterUrl' => 'https://twitter.com/tifintech',
     'youtubeUrl' => 'https://www.youtube.com/channel/UCnWMF0CDmlaPtpjrq4MpGXw',
+    'linkedInUrl' => 'https://www.linkedin.com/showcase/social-trader-tools-platform/',
     'baseUrl' => 'https://www.socialtradertools.com/',
 
     // Helpers

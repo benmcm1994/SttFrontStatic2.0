@@ -12,7 +12,8 @@ mix.webpackConfig({
     ]
 });
 
-mix.js('source/_assets/js/main.js', 'js')
+mix.copy('source/_assets/js/config.blade.js', 'source/assets/build/js')
+    .js('source/_assets/js/main.js', 'js')
     .sass('source/_assets/sass/main.scss', 'css')
     .purgeCss({
         folders: ['source'],

@@ -46,7 +46,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <h1>Features</h1>
+                        <h1>{{ $page->title }}</h1>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,11 @@
         @include('_partials.footer')
 
     @endif
+
+    @include('_components.subscription-modal')
+
     <!-- Custom JS -->
+    <script src="/assets/build/js/config.js"></script>
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
     <script>
@@ -183,8 +187,9 @@
             });
         });
 
-
-
     </script>
+
+    @yield('javascript')
+
     </body>
 </html>
