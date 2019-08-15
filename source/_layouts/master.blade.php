@@ -55,6 +55,9 @@
         @include('_partials.footer')
 
     @endif
+
+    @include('_components.subscription-modal')
+
     <!-- Custom JS -->
     <script src="/assets/build/js/config.js"></script>
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>

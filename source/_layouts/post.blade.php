@@ -2,17 +2,21 @@
 
 @section('body')
     <section class="section">
-        <div class="container">
-            @yield('content')
-            <br/>
-            <div class="social social-boxed social-colored pull-right" style="color: white; cursor: pointer;">
-                <a class="social-facebook" data-js="facebook-share"><i class="fa fa-facebook"></i></a>
-                <a class="social-twitter" data-js="twitter-share"><i class="fa fa-twitter"></i></a>
+        <div class="container post-container">
+            <div class="row">
+                <div class="col-12 text-center text-md-left">
+                    @yield('content')
+                    <br/>
+                    <div class="social social-boxed social-colored pull-right" style="color: white; cursor: pointer;">
+                        <a class="social-facebook" data-js="facebook-share"><i class="fa fa-facebook"></i></a>
+                        <a class="social-twitter" data-js="twitter-share"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <p>
+                        Posted <strong>{{ date('jS F, Y', strtotime($page->published_on)) }}</strong> by
+                        <strong>{{ $page->author }}</strong>
+                    </p>
+                </div>
             </div>
-            <p>
-                Posted <strong>{{ date('jS F, Y', strtotime($page->published_on)) }}</strong> by
-                <strong>{{ $page->author }}</strong>
-            </p>
         </div>
     </section>
 @endsection
