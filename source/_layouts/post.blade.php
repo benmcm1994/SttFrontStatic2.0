@@ -2,24 +2,30 @@
 
 @section('body')
     <section class="section">
-        <div class="container">
-            @yield('content')
-            <br/>
-            <div class="social social-boxed social-colored pull-right" style="color: white; cursor: pointer;">
-                <a class="social-facebook" data-js="facebook-share"><i class="fa fa-facebook"></i></a>
-                <a class="social-twitter" data-js="twitter-share"><i class="fa fa-twitter"></i></a>
+        <div class="container post-container">
+            <div class="row">
+                <div class="col-12 text-center text-md-left">
+                    @yield('content')
+                    <br/>
+                    <div class="pull-right" style="color: white; cursor: pointer;">
+                        <a data-js="facebook-share"><i class="fa fa-facebook-square fa-2x social-link" aria-hidden="true"></i></a>
+                        <a data-js="twitter-share"><i class="fa fa-twitter-square fa-2x social-link" aria-hidden="true"></i></a>
+                    </div>
+                    <p>
+                        Posted <strong>{{ date('jS F, Y', strtotime($page->published_on)) }}</strong> by
+                        <strong>{{ $page->author }}</strong>
+                    </p>
+                </div>
             </div>
-            <p>
-                Posted <strong>{{ date('jS F, Y', strtotime($page->published_on)) }}</strong> by
-                <strong>{{ $page->author }}</strong>
-            </p>
         </div>
     </section>
 @endsection
 
+
+
 @section('javascript')
 
-    <script type="text/javascript">
+    <script>
 
         $(document).ready(function () {
             var twitterShare = document.querySelector('[data-js="twitter-share"]');

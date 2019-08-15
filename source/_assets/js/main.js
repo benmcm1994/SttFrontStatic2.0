@@ -10,5 +10,6 @@ window.validate = require('jquery-validation');
 const swiper = require('./swiper');
 const navbar = require('./navbar');
 const subscribe = require('./subscribe');
+const share = require('./share');
 
 $('.modal ').insertAfter($('body'));
