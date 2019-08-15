@@ -29178,6 +29178,8 @@ var navbar = __webpack_require__(/*! ./navbar */ "./source/_assets/js/navbar.js"
 
 var subscribe = __webpack_require__(/*! ./subscribe */ "./source/_assets/js/subscribe.js");
 
+var share = __webpack_require__(/*! ./share */ "./source/_assets/js/share.js");
+
 $('.modal ').insertAfter($('body'));
 
 /***/ }),
@@ -29211,6 +29213,17 @@ window.onscroll = function () {
     navbar.classList.add('body-scrolled');
   }
 };
+
+/***/ }),
+
+/***/ "./source/_assets/js/share.js":
+/*!************************************!*\
+  !*** ./source/_assets/js/share.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 

@@ -7138,7 +7138,7 @@ button.bg-dark:focus {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1) !important;
 }
 
 .shadow-lg {
@@ -9973,7 +9973,7 @@ h3 {
     background: #171b22;
     opacity: 0.98;
     transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    z-index: 2000;
+    z-index: 1;
   }
 
   .offcanvas-collapse .navbar-nav li > a {
@@ -10037,8 +10037,86 @@ h3 {
 }
 
 .pricing-card {
-  padding: 30px;
+  padding: 30px 10px 30px 10px;
   border: none;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+}
+.pricing-card_popular {
+  background: #f8f8f8;
+}
+.pricing-card__tag {
+  position: absolute;
+  background: #46da60;
+  top: 0;
+  left: 50px;
+  transform-origin: top left;
+  transform: rotate(90deg);
+  font-size: 13px;
+  padding: 0px 5px 0px 5px;
+  color: white;
+  text-transform: uppercase;
+  border-right: 5px solid #46da60;
+  border-radius: 0px 10px 10px 0px;
+}
+.pricing-card__price {
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin: 10px;
+  font-size: 3.3rem;
+}
+.pricing-card__accounts {
+  margin-bottom: 40px;
+}
+.pricing-card:hover {
+  transform: scale(1.1);
+}
+
+.blog-card {
+  border: none;
+}
+.blog-card__title {
+  float: left;
+  display: inline;
+}
+.blog-card__date {
+  float: right;
+  display: inline;
+}
+@media only screen and (max-width: 900px) {
+  .blog-card__date {
+    display: none;
+  }
+}
+.blog-card__body {
+  float: left;
+}
+.blog-card__link {
+  float: left;
+}
+
+.post-container img {
+  width: 100%;
+  box-shadow: 0px 0px 26px -5px rgba(0, 0, 0, 0.75);
+  margin: 5px;
+  transition: transform 0.2s;
+}
+@media only screen and (max-width: 900px) {
+  .post-container img:active {
+    transform: scale(1.5);
+  }
+  .post-container p {
+    text-align: left;
+  }
+}
+
+.contact-card {
+  background: #f8f8f8;
+  border: none;
+}
+.contact-card__social-link {
+  padding: 10px;
+  display: inline-block;
 }
 
 html {
@@ -10188,7 +10266,7 @@ h1 {
   background: #191919;
   background-size: cover;
   position: relative;
-  z-index: 5;
+  z-index: 2;
   color: white;
 }
 
