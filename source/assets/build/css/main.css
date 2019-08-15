@@ -10102,7 +10102,7 @@ h3 {
   transition: transform 0.2s;
 }
 @media only screen and (max-width: 900px) {
-  .post-container img:hover {
+  .post-container img:active {
     transform: scale(1.5);
   }
 }
