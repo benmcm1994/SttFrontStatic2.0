@@ -13,11 +13,11 @@
                     <li class="nav-item active">
                         <a class="nav-link  {{ $page->active('index') }}" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown d-none d-md-block nav-dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <a class="nav-link {{ $page->active(['account-manager', 'trade-copier', 'signal-provider', 'whitelabel']) }} dropdown-toggle">
+                    <li class="nav-item dropdown d-none d-md-block">
+                        <a class="nav-link {{ $page->active(['account-manager', 'trade-copier', 'signal-provider', 'whitelabel']) }} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Features
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item {{ $page->active('account-manager') }} nav-dropdown__item" href="/account-manager/">Account Manager</a>
                             <a class="dropdown-item {{ $page->active('trade-copier') }} nav-dropdown__item" href="/trade-copier/">Trade Copier</a>
                             <a class="dropdown-item {{ $page->active('signal-provider') }} nav-dropdown__item" href="/signal-provider/">Signal Provider</a>

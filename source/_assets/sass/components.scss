@@ -1,9 +1,24 @@
 .nav-item {
   margin-left: 1.5rem;
 
+  @media screen and (max-width: 800px){
+    margin: 0;
+  }
+
   &__cta_outline {
     margin-left: 0;
   }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  &__cta {
+    color: white;
+  }
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
+
 }
 
 .nav-link {
@@ -31,6 +46,10 @@
     border-radius: 2px;
     padding: 4px 20px 4px 20px;
 
+    @media screen and (max-width: 800px){
+      margin: 20px;
+    }
+
     &:hover {
       box-shadow: 0px 0px 5px $primary;
     }
@@ -43,6 +62,10 @@
       border-radius: 2px;
       padding: 4px 20px 4px 20px;
       margin-left: 0;
+
+      @media screen and (max-width: 800px){
+        margin: 0 20px 0 20px;
+      }
 
       &:hover {
         background: $primary;
@@ -62,6 +85,12 @@
     text-transform: none;
     font-weight: 400;
     opacity: .8;
+
+    &.active {
+      background: transparent;
+      color: $primary;
+      font-weight: 600;
+    }
   }
 }
 
@@ -257,8 +286,9 @@
   color: #0077B5;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-toggler {
   border: none !important;
+  color: white;
 }
 
 
