@@ -6,7 +6,7 @@
             </button>
             <div class="navbar-collapse offcanvas-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <button class="closebtn d-md-none">&times;</button>
+                    <button role="button" aria-label="Close" class="closebtn d-md-none">&times;</button>
                     <li class="nav-item d-md-none">
                         <div class="text-center p-3"><img src="/assets/images/logo-dark.png" alt="Social Trader Tools Logo" width="50%"></div>
                     </li>

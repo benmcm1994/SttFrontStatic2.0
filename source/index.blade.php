@@ -237,7 +237,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <button class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#reviewModal">LEAVE US A REVIEW</button>
+                    <button class="btn btn-primary rounded-pill" role="button" aria-label="Review Modal" data-toggle="modal" data-target="#reviewModal">LEAVE US A REVIEW</button>
                 </div>
             </div>
         </div>
