@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h6>Subscribe to our newsletter for the latest news and updates!</h6>
-                <button class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#subscriptionModal">SUBSCRIBE NOW</button>
+                <button class="btn btn-primary rounded-pill" role="button" aria-label="Subscribe Modal"  data-toggle="modal" data-target="#subscriptionModal">SUBSCRIBE NOW</button>
             </div>
         </div>
     </div>

@@ -13,10 +13,8 @@ window.onscroll = function() {
         navbar.classList.remove('body-scrolled');
         navbar.classList.add('bg-transparent');
         navbar.classList.remove('navbar-light');
-        navbar.classList.add('navbar-dark');
     } else {
         navbar_logo.src = "/assets/images/logo.png";
-        navbar.classList.remove('navbar-dark');
         navbar.classList.remove('bg-transparent');
         navbar.classList.add('navbar-light');
         navbar.classList.add('body-scrolled');

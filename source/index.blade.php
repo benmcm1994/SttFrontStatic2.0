@@ -10,7 +10,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 text-center order-second text-center">
-                    <img src="/assets/images/responsive.png" alt="">
+                    <img src="/assets/images/responsive.png" alt="Account Manager Screenshot">
                 </div>
                 <div class="col-12 col-md-6 order-last text-center text-md-left">
                     <h4 class="feature-heading">Account Manager</h4>
@@ -36,13 +36,13 @@
                     <a href="/trade-copier/" class="btn btn-primary rounded-pill mobile-btn">TRADE COPIER</a>
                 </div>
                 <div class="col-12 col-md-6 order-first order-md-last text-center">
-                    <img src="/assets/images/copier.png" alt="">
+                    <img src="/assets/images/copier.png" alt="Copier Screenshot">
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-12 col-md-6 order-first order-md-first text-center">
-                    <img src="/assets/images/signal.png" alt="">
+                    <img src="/assets/images/signal.png" alt="Signal Screenshot">
                 </div>
                 <div class="col-12 col-md-6 order-last order-md-last text-center text-md-left">
                     <h4 class="feature-heading">Signal Provider</h4>
@@ -72,7 +72,7 @@
                     <a href="/whitelabel/" class="btn btn-primary rounded-pill mobile-btn">WHITELABEL</a>
                 </div>
                 <div class="col-12 col-md-6 order-first order-md-last text-center">
-                    <img src="/assets/images/whitelabel.png" alt="">
+                    <img src="/assets/images/whitelabel.png" alt="Whitelabel Screenshot">
                 </div>
             </div>
         </div>
@@ -237,7 +237,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <button class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#reviewModal">LEAVE US A REVIEW</button>
+                    <button class="btn btn-primary rounded-pill" role="button" aria-label="Review Modal" data-toggle="modal" data-target="#reviewModal">LEAVE US A REVIEW</button>
                 </div>
             </div>
         </div>

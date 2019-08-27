@@ -25,6 +25,7 @@ return [
     'twitterUrl' => 'https://twitter.com/tifintech',
     'youtubeUrl' => 'https://www.youtube.com/channel/UCnWMF0CDmlaPtpjrq4MpGXw',
     'linkedInUrl' => 'https://www.linkedin.com/showcase/social-trader-tools-platform/',
+    'tifintechUrl' => 'https://www.tifintech.com/',
     'baseUrl' => 'https://www.socialtradertools.com/',
 
     // Helpers
