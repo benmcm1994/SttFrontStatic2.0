@@ -9738,6 +9738,11 @@ h3 {
   color: white;
 }
 
+.nav-item .active {
+  color: #0facf3;
+  opacity: 1;
+}
+
 .nav-link {
   padding-right: 20px !important;
   padding-left: 20px !important;

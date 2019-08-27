@@ -1,6 +1,6 @@
  <nav class="navbar fixed-top navbar-expand-lg bg-transparent" id="navbar">
         <div class="container">
-            <a class="navbar-brand {{ $page->active('index') }}" href="/"><img id="navbar-logo" src="/assets/images/logo-dark.png"></a>
+            <a class="navbar-brand" href="/"><img id="navbar-logo" src="/assets/images/logo-dark.png" alt="Social Trader Tools Light Logo" ></a>
             <button class="navbar-toggler" type="button"  data-toggle="offcanvas">
                 <i class="fa fa-navicon"></i>
             </button>
@@ -8,10 +8,10 @@
                 <ul class="navbar-nav ml-auto">
                     <button role="button" aria-label="Close" class="closebtn d-md-none">&times;</button>
                     <li class="nav-item d-md-none">
-                        <div class="text-center p-3"><img src="/assets/images/logo-dark.png" alt="Social Trader Tools Logo" width="50%"></div>
+                        <div class="text-center p-3"><img src="/assets/images/logo-dark.png" alt="Social Trader Tools Dark Logo" width="50%"></div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link  {{ $page->active('index') }}" href="/">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link {{ $page->active(' ') }}" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown d-none d-md-block">
                         <a class="nav-link {{ $page->active(['account-manager', 'trade-copier', 'signal-provider', 'whitelabel']) }} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
