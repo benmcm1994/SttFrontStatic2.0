@@ -9,6 +9,9 @@
         <meta name="description" content="Social Trader Tools is a web based platform for anyone that uses MT4. Hosted in the cloud 24/7 without the hassle of a VPS, allowing you to copy trades to any amount of trading accounts and much more.">
         <meta name="author" content="Titanium Financial Technology">
 
+        @if (!($page->crawl && $page->branch == 'master'))
+            <meta name="robots" content="noindex, nofollow"/>
+        @endif
 
         <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
         <link rel="icon" type="image/ico" href="/assets/images/favicon.ico"/>
@@ -27,6 +30,29 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+        @if ($page->crawl && $page->branch === 'master' && $page->getPath() != '/404')
+        <!-- Facebook tags -->
+            <meta property="og:url" content="{{ $page->getUrl() }}"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="{{ $page->title }} :: Social Trader Tools"/>
+            <meta property="og:description" content="{{ $page->description }}"/>
+            <meta property="og:image" content="{{ $page->baseUrl }}assets/images/responsive.png"/>
+            <!-- End Facebook tags -->
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60025837-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'UA-60025837-1');
+                gtag('config', 'AW-866337964');
+            </script>
+            <!-- End of Google Analytics -->
+        @endif
 
     </head>
     <body>

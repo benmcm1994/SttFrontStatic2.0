@@ -1,3 +1,7 @@
+---
+crawl: true
+---
+
 @extends('_layouts.master')
 
 @section('body')
